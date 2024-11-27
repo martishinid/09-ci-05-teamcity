@@ -14,9 +14,9 @@
 1. Создайте новый проект в teamcity на основе fork
 2. Сделайте autodetect конфигурации
 3. Сохраните необходимые шаги, запустите первую сборку master'a
-![](pic/09-ci-05-teamcity-1.jpg)
+![](./09-ci-05-teamcity-1.jpg)
 4. Поменяйте условия сборки: если сборка по ветке `master`, то должен происходит `mvn clean package`, иначе `mvn clean test`
-![](pic/09-ci-05-teamcity-2.jpg)
+![](./09-ci-05-teamcity-2.jpg)
 5. Мигрируйте `build configuration` в репозиторий  
 [build configuration](https://github.com/martishinid/example-teamcity/blob/master/settings.kts)
 6. Создайте отдельную ветку `feature/add_reply` в репозитории
@@ -25,7 +25,7 @@
 9. Сделайте push всех изменений в новую ветку в репозиторий  
 [feature/add_reply](https://github.com/martishinid/example-teamcity/tree/feature/add_reply)
 10. Убедитесь что сборка самостоятельно запустилась, тесты прошли успешно
-![](pic/09-ci-05-teamcity-3.jpg)
+![](./09-ci-05-teamcity-3.jpg)
 11. Внесите изменения из произвольной ветки `feature/add_reply` в `master` через `Merge`
 12. Убедитесь, что нет собранного артефакта в сборке по ветке `master`
 13. Настройте конфигурацию так, чтобы она собирала `.jar` в артефакты сборки
